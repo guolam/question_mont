@@ -25,4 +25,11 @@
 
 ## 参考にした web サイトなど
 
-  - 後で見返せるように
+  - 【ＰＨＰ】PHPの高度な配列操作
+  https://qiita.com/panda-chibi/items/9f5eaaed10e4a204d784
+
+  - PHPでCSVを配列にする
+  https://qiita.com/863/items/3c87752eadb8e6877d51
+
+  - PHP基礎 誰でもわかる配列の基礎とforeach解説
+  https://www.youtube.com/watch?v=DNeZ8nmK7gg
