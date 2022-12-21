@@ -16,10 +16,10 @@ $Q8 = $_POST["Q8"];
 
 // "\n"は改行
 
-$write_data = "{$Q1} {$Q2} {$Q3} {$Q4} {$Q5} {$Q6} {$Q7} {$Q8} \n";
+$write_data = "{$Q1} \n{$Q2} \n{$Q3} \n{$Q4} \n{$Q5} \n{$Q6} \n{$Q7} \n{$Q8} \n ";
 
 
-$csv = fopen("data/questionnaire_result.csv", "a");
+$csv = fopen("data/questionnaire_result.csv", "w");
 
 
 //他の人に書けないように、ロックをかける
