@@ -6,7 +6,6 @@ $array = [];
 
 
 // 読み込み専用
-// $file = fopen("data/todo.txt", "r");
 $csv = fopen("data/questionnaire_result.csv", "r");
 // var_dump($csv);
 // exit();
@@ -26,12 +25,9 @@ if ($csv) {
 }
 
 
-
 flock($csv, LOCK_UN);
 fclose($csv);
 
-// 実行したら、画面に出てくる。
-// var_dump($array);
 ?>
 
 <!-------------------- html-------------------->
@@ -60,8 +56,7 @@ fclose($csv);
         </tr>
       </thead>
       <tbody>
-        <!-- 表示させる -->
-        <!-- ?= $str ? -->
+
 
       </tbody>
     </table>
@@ -76,9 +71,12 @@ fclose($csv);
   <div class="botton">
     <a class="arrow_animation_button" href="index1.php#q_p1">もう一回診断する</a>
   </div>
-  <!-- <a href="index1.php#q_p1" class="home botton">
-    <p>もう一回診断する</p>
-  </a> -->
+
+
+  <div class="botton">
+    <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="私が好きな山はこちら!" data-hashtags="山好きと繋ぎたい" data-size="large" 　data-show-count="false">Tweet</a>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </div>
 
 
   <!---------------- javascript ---------------->
@@ -132,7 +130,7 @@ fclose($csv);
     function mark(result_num) {
 
       if (result_num < 20)
-        return "命の保証がない";
+        return "一旦冷静になりましょう!!!命の保証がないぞ！";
       else if (result_num >= 20 && result_num < 60)
         return "ちゃんと考えてから行動しましょう";
       else if (result_num >= 60 && result_num < 80)
@@ -166,10 +164,7 @@ fclose($csv);
       }
     });
 
-
-
     //radar chartの図面 - chart.jsより作成
-
     $(function() {
       var container = $('.canvas-container');
       var chart = $('#chart');
@@ -202,10 +197,6 @@ fclose($csv);
       }
     });
   </script>
-
-
-
-
 
 
 

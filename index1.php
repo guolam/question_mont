@@ -17,7 +17,7 @@
             <div id="q_p1">
                 <div class="yama">
                     <p>1. あなたは疲れています。今日行く山を決めてください。</p>
-                    <input type="radio" name="Q1" value="8" data-value="" id="Q1A">
+                    <input type="radio" name="Q1" value="8" id="Q1A">
                     <label for="Q1A" class="label" required>宝満山</label>
                     <input type="radio" name="Q1" value="4" id="Q1B">
                     <label for="Q1B" class="label">鷹ノ巣山</label>
@@ -135,7 +135,11 @@
 
         </fieldset>
 
+
+
         <input type="submit" class="button" href="form.php" value="送信">
+
+
     </form>
 
 
