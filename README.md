@@ -2,7 +2,7 @@
 
 ## DEMO
 
-  - なし
+  - https://guolam.sakura.ne.jp/mountain_diagnose/
 
 ## 紹介と使い方
 
